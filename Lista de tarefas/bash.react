@@ -1,0 +1,9 @@
+\\ Certifique-se de ter o Node.js instalado em seu sistema antes de prosseguir. Se não tiver, você pode baixá-lo e instalá-lo a partir do site oficial: https://nodejs.org/.
+
+Primeiro, você precisa criar um novo aplicativo React. Abra o terminal e execute os seguintes comandos:
+
+npx create-react-app todo-app
+cd todo-app
+
+
+Agora, você pode substituir os arquivos gerados pelo aplicativo React pelos seguintes
