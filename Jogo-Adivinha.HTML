@@ -1,0 +1,103 @@
+<meta charset="UTF-8">
+
+<div class="body">
+    <div class="body-in">
+
+            <h1>Jogo Adivinha</h1>
+            <p>Você deve adivinhar qual número o computador pensou! Entre 1 e 10:</p>
+
+
+            <label class="palpite">Digite seu palpite:</label>
+            <input/>
+            <button>Enviar</button>
+
+    </div>
+
+</div>
+
+<style>
+* {
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+    font-style: none;
+    font-family: sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.body {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.body-in {
+    width: 500px;
+    height: 150px;
+    background-color: #210638;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 17px;
+    padding-right: 5px;
+}
+
+input {
+    width: 100px;
+    height: 30px;
+    color: #000000;
+}
+
+button {
+    color: #000000;
+    text-decoration: none;
+    width: 80px;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+</style>
+
+
+<script>
+
+
+    function sorteia(n) {
+
+    return Math.round(Math.random() * n);
+    }    
+
+    var segredo = sorteia(10);
+
+    var input = document.querySelector("input");
+
+    function verifica() {
+
+        if(input.value == segredo) {
+
+        alert("Você ACERTOU! O número foi: "+ segredo);
+        } else {
+
+        alert("Você ERROU!!!!!!!!");
+        }
+
+    }
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifica;
+
+</script>
