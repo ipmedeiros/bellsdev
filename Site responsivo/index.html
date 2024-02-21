@@ -1,33 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site Responsivo</title>
+  <title>Meu Portfólio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Meu Site Responsivo em Testes</h1>
-    <button id="menu-toggle">Abrir Menu</button>
+    <div class="container">
+      <h1>Meu Portfólio</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  
-  <nav id="main-menu">
-    <ul>
-      <li><a href="#">Página Inicial</a></li>
-      <li><a href="#">Sobre</a></li>
-      <li><a href="#">Contato</a></li>
-    </ul>
-  </nav>
 
-  <div class="content">
-    <p>Conteudo do site</p>
-  </div>
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre Mim</h2>
+      <div class="profile">
+        <img src="profile.jpg" alt="Minha Foto">
+        <p>Olá! Meu nome é [Seu Nome]. Sou um(a) [Sua Profissão] com experiência em [Áreas de Especialização]. Estou comprometido(a) em criar soluções criativas e eficazes para meus clientes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2>Meu Portfolio</h2>
+      <!-- Adicione seus projetos aqui -->
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <p>Entre em contato comigo para discutir oportunidades de colaboração ou para qualquer outra consulta.</p>
+      <form>
+        <input type="text" placeholder="Seu Nome">
+        <input type="email" placeholder="Seu Email">
+        <textarea placeholder="Sua Mensagem"></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2024 Bells </p>
+    <div class="container">
+      <p>&copy; 2024 Isabella Pereira</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
