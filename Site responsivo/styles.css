@@ -1,23 +1,16 @@
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
   
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
   header {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
-  }
-  
-  header h1 {
-    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   nav ul {
@@ -30,48 +23,25 @@ body {
     margin-right: 20px;
   }
   
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
   section {
-    padding: 40px 0;
+    padding: 50px 0;
   }
   
-  .profile {
-    display: flex;
-    align-items: center;
-  }
-  
-  .profile img {
-    width: 200px;
-    height: auto;
-    margin-right: 20px;
-  }
-  
-  form input,
-  form textarea,
-  form button {
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
+  .project {
+    margin-bottom: 20px;
   }
   
   footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
   }
   
-  /* Estilos responsivos */
-  @media (max-width: 768px) {
-    .container {
-      width: 90%;
-    }
-  
-    header {
-      padding: 10px 0;
-    }
-  
-    .profile img {
-      width: 100px;
-    }
-  }
   

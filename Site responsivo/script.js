@@ -1,11 +1,16 @@
+// Script de interação no site (opcional)
 document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menu-toggle');
-    const mainMenu = document.getElementById('main-menu').querySelector('ul');
+    const contactForm = document.getElementById('contact-form');
   
-    menuToggle.addEventListener('click', function() {
-      mainMenu.classList.toggle('active');
-      const isOpen = mainMenu.classList.contains('active');
-      menuToggle.textContent = isOpen ? 'Fechar Menu' : 'Abrir Menu';
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const formData = new FormData(contactForm);
+      const formDataJSON = JSON.stringify(Object.fromEntries(formData.entries()));
+      console.log(formDataJSON);
+      // Aqui você pode adicionar lógica para enviar os dados do formulário para um servidor ou serviço de e-mail
+      alert('Mensagem enviada com sucesso!');
+      contactForm.reset();
     });
   });
+  
   
