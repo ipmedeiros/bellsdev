@@ -1,0 +1,19 @@
+.app {
+    text-align: center;
+  }
+  
+  .todo-list {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .todo {
+    margin: 10px 0;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+  }
+  
