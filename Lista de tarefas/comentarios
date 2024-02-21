@@ -4,6 +4,4 @@ Primeiro, você precisa criar um novo aplicativo React. Abra o terminal e execut
 
 npx create-react-app todo-app
 cd todo-app
-
-
 Agora, você pode substituir os arquivos gerados pelo aplicativo React pelos seguintes
