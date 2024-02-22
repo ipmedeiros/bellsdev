@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consultas</title>
+</head>
+<body>
+    <h1>Agendamento de Consultas</h1>
+    <form action="/agendar" method="post">
+        <label for="medico">Selecione um médico:</label>
+        <select name="medico" id="medico">
+            {% for medico, horarios in medicos.items() %}
+                <option value="{{ medico }}">{{ medico }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <label for="horario">Selecione um horário:</label>
+        <select name="horario" id="horario">
+            {% for horario in horarios %}
+                <option value="{{ horario }}">{{ horario }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <button type="submit">Agendar Consulta</button>
+    </form>
+</body>
+</html>
